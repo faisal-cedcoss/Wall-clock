@@ -1,0 +1,104 @@
+body
+{
+	min-height:100%;
+	min-width:100%;
+	background-image: url("bg1.jpg");
+	justify-content: center;
+	align-items: center;
+	display: flex;
+	overflow: hidden;
+}
+
+.clock
+{
+	height:500px;
+	width:500px;
+	margin-top:5%;
+	background-color: white;
+	border-radius: 50%;
+	position:relative;   
+	background-size: cover;
+	box-shadow: 0 0 20px crimson;
+	background-image: url("clock.png")	
+}
+
+.logo
+{
+	height:7%;
+	width:20%;
+	left:41%;
+	top:25%;
+	position:absolute;
+	background-image: url("logo.png");
+	z-index: 1;
+}
+
+.midPoint
+{
+    height:15px;
+    width:15px;
+    content:'';
+    background-color: #262626;
+    border-radius: 50%;
+    position:absolute;
+    left:50%;
+    top:50%;
+    transform: translate(-50%, -50%);
+    z-index: 5;
+}
+
+.hand
+{
+	left:50%;
+	bottom:50%;
+	position:absolute;
+	border-radius: 10px;
+	transform:translate(-50%) rotate(90deg);
+	transform-origin: bottom;
+}
+
+.sec
+{
+	height:40%;
+	width:3px;
+	background-color: crimson;
+	transform:translate(-50%);
+	z-index: 2;
+}
+
+.mint 
+{
+	height:35%;
+	width:5px;
+	background-color: #262626;
+	transform:translate(-50%);
+	z-index: 3;
+}
+
+.hr
+{
+	height:32%;
+	width:7px;
+	background-color: #262626;
+	transform:translate(-50%);
+	z-index: 4;
+}
+
+.digital
+{
+	height:40px;
+    width:190px;
+    content:'';
+    padding-top: 1%;
+    text-align: center;
+    font-family: 'PT Serif', serif;
+    font-size: 27px;
+    font-color: #262626;
+    background-color: white;
+    border: 5px solid #262626;
+    position:absolute;
+    left:50%;
+    bottom:17%;
+    transform: translate(-50%, -50%);
+    z-index: 1;
+}
